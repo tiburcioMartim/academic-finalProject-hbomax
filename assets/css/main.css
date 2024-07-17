@@ -35,7 +35,7 @@ header {
     background: linear-gradient(-45deg, #56125b, #0f0f10, #271e6e);
     background-size: 400% 400%;
     margin-top: 140px;
-    /* height: 500px; */
+    padding-top: 80px;
     animation: gradient 10s ease infinite alternate;
 }
 
@@ -55,15 +55,19 @@ header {
 
 .header__content {
     padding: 0 40px;
+    gap: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .header__channels {
-    padding: 5rem 2rem 0;
-    margin: 0 0 4rem 0;
+    /* padding: 5rem 0 0;
+    margin: 0 0 4rem 0; */
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 10px;
+    justify-content: center;
+    gap: 24px;
     align-items: center;
 }
 
@@ -80,7 +84,32 @@ header {
 }
 
 .divider {
-    height: 10px;
-    width: 250px;
+    height: 5px;
+    width: 195px;
     background: var(--divider-bg-color);
+}
+
+.header__subscriber--info {
+    display: flex;
+    flex-direction: column;
+}
+
+.header__subscriber--info p {
+    font-size: 1.25rem;
+}
+
+.header__offer--price {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    gap: .5rem;
+}
+
+.header__offer--price p {
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.header__offer--price span {
+    font-size: 1rem;
 }
