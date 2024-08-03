@@ -21,6 +21,10 @@
   unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 
+
+
+
+
 * {
   padding: 0;
   margin: 0;
@@ -49,6 +53,11 @@
   --form-field-error: rgb(255, 76, 76);
   scroll-behavior: smooth;
 }
+
+
+
+
+
 
 /* Buttons */
 button,
@@ -107,13 +116,28 @@ button,
   animation: wiggle 2.2s linear infinite;
 }
 
+
+
+
+
+/* FONTES */
 .ft-raleway {
   font-family: 'Raleway', sans-serif;
+}
+
+.ft-raleway-500-32 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  font-size: 2rem;
 }
 
 .ft-quicksand {
   font-family: 'Quicksand', sans-serif;
 }
+
+
+
+
 
 /* ANIMATIONS */
 @keyframes wiggle {
