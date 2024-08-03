@@ -41,7 +41,7 @@ header {
     background: linear-gradient(-45deg, #56125b, #0f0f10, #271e6e);
     background-size: 400% 400%;
     margin-top: 140px;
-    padding-top: 80px;
+    padding: 100px 0 300px;
     animation: gradient 10s ease infinite alternate;
 }
 
@@ -104,4 +104,11 @@ header {
 
 .header__offer--price span {
     font-size: 1rem;
+}
+
+
+
+/* SECTION [ PLANS ] */
+#plans {
+    margin: 80px 0 0 0;
 }
