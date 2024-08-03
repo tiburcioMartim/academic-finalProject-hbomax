@@ -27,6 +27,7 @@
   font-family: 'Raleway', sans-serif;
   color: var(--text-color);
   text-align: center;
+  text-decoration: none;
 }
 
 :root {
@@ -46,15 +47,26 @@
   --form-field-border: 1px solid rgba(255, 255, 255, 0.7);
   --form-field-placeholder: rgba(255, 255, 255, 0.7);
   --form-field-error: rgb(255, 76, 76);
-
   scroll-behavior: smooth;
 }
 
-.btn-enter {
-  background: transparent;
-  border: none;
-  color: white;
+/* Buttons */
+button,
+.header__content a {
+  padding: 16px 40px;
+  background-color: var(--tertiary-color);
+  border-radius: 500px;
   font-weight: 700;
+  color: var(--text-color);
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 4px;
+  border: none;
+  cursor: pointer;
+}
+
+.header__content a {
+  background-color: transparent;
 }
 
 .btn-subscriber {
@@ -65,20 +77,6 @@
   font-weight: 700;
   padding: 8px 26px;
   transition: 1s;
-  cursor: pointer;
-}
-
-.btn-subscriber-animated {
-  background: var(--btn-bg-color-gradient);
-  border: none;
-  border-radius: 35px;
-  color: white;
-  font-weight: 700;
-  font-size: 1.5rem;
-  padding: 8px 26px;
-  transition: 1s;
-  cursor: pointer;
-  text-transform: uppercase;
 }
 
 .btn-subscriber:hover {
@@ -92,10 +90,75 @@
   cursor: pointer;
 }
 
+.btn-subscriber-animated {
+  background: var(--btn-bg-color-gradient);
+  outline: 3px solid transparent;
+  transition: background 1s, outline 1s;
+  background-size: 250%;
+}
+
+.btn-subscriber-animated:hover {
+  background-color: transparent;
+  background-position: 100%;
+  outline: 2px solid var(--secondary-color);
+}
+
+.header__btn {
+  animation: wiggle 2.2s linear infinite;
+}
+
 .ft-raleway {
   font-family: 'Raleway', sans-serif;
 }
 
 .ft-quicksand {
   font-family: 'Quicksand', sans-serif;
+}
+
+/* ANIMATIONS */
+@keyframes wiggle {
+
+  0%,
+  10% {
+    transform: rotate(0);
+  }
+
+  15% {
+    transform: rotate(-15deg);
+  }
+
+  20% {
+    transform: rotate(10deg);
+  }
+
+  25% {
+    transform: rotate(-10deg);
+  }
+
+  30% {
+    transform: rotate(10deg);
+  }
+
+  35% {
+    transform: rotate(-10deg);
+  }
+
+  40%,
+  100% {
+    transform: rotate(0);
+  }
+}
+
+@keyframes gradient {
+  0% {
+      background-position: 0 50%;
+  }
+
+  50% {
+      background-position: 100% 50%;
+  }
+
+  100% {
+      background-position: 0 50%;
+  }
 }

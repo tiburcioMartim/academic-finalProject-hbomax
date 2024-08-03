@@ -1,0 +1,29 @@
+@import url('global.css');
+
+@media screen and (min-width:480px) {
+    .nav-menu {
+        height: 55px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .nav-menu_logo {
+        width: 160px;
+        margin-left: 8px;
+        margin-bottom: 8px;
+    }
+
+    .header-btn {
+        margin-bottom: 8px;
+    }
+
+    header {
+        margin-top: 50px;
+    }
+
+    .header__content .txt-size {
+        width: 240px;
+        font-weight: 100;
+    }
+}
