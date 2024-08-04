@@ -32,6 +32,7 @@
   color: var(--text-color);
   text-align: center;
   text-decoration: none;
+  box-sizing: border-box;
 }
 
 :root {
@@ -56,12 +57,20 @@
 
 
 
+/* DEFAULTS */
+.w-300 {
+  width: 300px;
+}
+
+
 
 
 
 /* Buttons */
 button,
-.header__content a {
+.header__content a,
+.plan__card a {
+  display: inline-block;
   padding: 16px 40px;
   background-color: var(--tertiary-color);
   border-radius: 500px;
@@ -74,7 +83,8 @@ button,
   cursor: pointer;
 }
 
-.header__content a {
+.header__content a,
+.plan__card a {
   background-color: transparent;
 }
 
@@ -102,7 +112,7 @@ button,
 .btn-subscriber-animated {
   background: var(--btn-bg-color-gradient);
   outline: 3px solid transparent;
-  transition: background 1s, outline 1s;
+  transition: background 1s, outline 1s, transform 1s;
   background-size: 250%;
 }
 
@@ -110,6 +120,7 @@ button,
   background-color: transparent;
   background-position: 100%;
   outline: 2px solid var(--secondary-color);
+  transform: scale(1.05);
 }
 
 .header__btn {
