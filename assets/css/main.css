@@ -121,6 +121,10 @@ header::after {
     padding: 0 0 280px 0;
 }
 
+.card1 {
+    animation: cardRotateOne 2s linear 1;
+}
+
 .plan__card--containerExterno {
     display: flex;
     flex-direction: column;
