@@ -62,6 +62,10 @@
   width: 300px;
 }
 
+.title {
+  font-size: 2rem;
+  font-weight: 500;
+}
 
 
 
@@ -70,7 +74,7 @@
 button,
 .header__content a,
 .plan__card a {
-  display: inline-block;
+  /* display: inline-block; */
   padding: 16px 40px;
   background-color: var(--tertiary-color);
   border-radius: 500px;

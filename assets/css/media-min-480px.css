@@ -26,4 +26,16 @@
         width: 240px;
         font-weight: 100;
     }
+
+    .plan__card--price .plan__card--value {
+        font-size: 2rem;
+    }
+
+    .plan__card--capsule {
+        padding: 40px 60px;
+    }
+
+    .plan__card--listItem {
+        font-size: 1.25rem;
+    }
 }

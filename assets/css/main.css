@@ -117,11 +117,19 @@ header::after {
 
 
 /* SECTION [ PLANS ] */
-.plan__card--containerExterno{
+#plans {
+    padding: 0 0 280px 0;
+}
+
+.plan__card--containerExterno {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 5rem;
+}
+
+.plan__card--price .plan__card--value {
+    font-size: 1.5rem;
 }
 
 .plans__container {
@@ -138,15 +146,19 @@ header::after {
     height: 650px;
     min-width: 260px;
     max-width: 600px;
-    padding: 40px 60px;
     border-radius: .5rem;
     flex-direction: column;
     justify-content: space-between;
 }
 
+.plan__card--capsule {
+    padding: 40px 40px;
+}
+
 .plan__card--container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
     justify-content: space-between;
     margin: 0 0 2rem 0;
 }
@@ -164,9 +176,10 @@ header::after {
 }
 
 .plan__card--listItem {
+    /* width: fit-content; */
     list-style: none;
     text-align: start;
-    font-size: 1.25rem;
+    font-size: 1rem;
     margin: 0 0 1rem 0;
     padding: 1rem 0 0 1rem;
 }
