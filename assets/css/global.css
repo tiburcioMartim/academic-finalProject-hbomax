@@ -74,6 +74,7 @@
 button,
 .header__content a,
 .plan__card a {
+  width: 75%;
   /* display: inline-block; */
   padding: 16px 40px;
   background-color: var(--tertiary-color);
