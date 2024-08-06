@@ -251,6 +251,34 @@ header::after {
 
 
 
+/* SECTION [ LOGIN ] */
+
+#login {
+    margin: 0 0 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+.login__container {
+    width: 100%;
+    max-width: 800px;
+    height: 450px;
+    background: var(--form-bg-color);
+    border-radius: .5rem;
+    padding: 2.5rem;
+}
+
+.login__btn-enter {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1rem;
+}
+
+
+
 /* FOOTER */
 .footer_container {
     display: flex;

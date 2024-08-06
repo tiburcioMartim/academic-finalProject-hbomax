@@ -21,37 +21,6 @@
   unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 
-/* Custom Scroll */
-
-::-webkit-scrollbar {
-  width: 8px;
-}
-
-::-webkit-scrollbar-thumb {
-  background: var(--tertiary-color);
-  border-radius: 10px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: var(--secondary-color);
-}
-
-
-
-* {
-  padding: 0;
-  margin: 0;
-  font-family: 'Raleway', sans-serif;
-  color: var(--text-color);
-  text-align: center;
-  text-decoration: none;
-  box-sizing: border-box;
-}
-
-section {
-  scroll-margin-top: 140px;
-}
-
 :root {
   --primary-color: #020228;
   --secondary-color: #ff00e5;
@@ -72,11 +41,48 @@ section {
   scroll-behavior: smooth;
 }
 
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+  color: var(--text-color);
+  text-align: center;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+/* Custom Scroll */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--tertiary-color);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--secondary-color);
+}
+
+
+
+section {
+  scroll-margin-top: 140px;
+}
+
+
+
 
 
 /* DEFAULTS */
 .w-300 {
   width: 300px;
+}
+
+.w-150 {
+  width: 150px;
 }
 
 .title {
