@@ -31,6 +31,11 @@ body {
     padding: .5rem 1.5rem .5rem .5rem;
 }
 
+.nav-menu img {
+    width: 160px;
+    height: auto;
+}
+
 .nav-menu a {
     font-size: 10pt;
     font-weight: 600;
@@ -118,7 +123,31 @@ header::after {
 
 /* SECTION [ PLANS ] */
 #plans {
-    padding: 0 0 280px 0;
+    max-width: 1200px;
+    margin: auto;
+    padding: 24px;
+    text-align: center;
+
+}
+
+.plan__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--card-bg-color);
+    min-width: 260px;
+    max-width: 600px;
+    border-radius: .5rem;
+    padding: 40px 40px;
+    min-height: 610px;
+    /* height: 650px; */
+}
+
+.plan__card--capsule {
+    display: flex;
+    flex-direction: column;
+    /* text-align: center; */
 }
 
 .card1 {
@@ -144,21 +173,6 @@ header::after {
     gap: 3rem;
 }
 
-.plan__card {
-    display: flex;
-    background: var(--card-bg-color);
-    height: 650px;
-    min-width: 260px;
-    max-width: 600px;
-    border-radius: .5rem;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.plan__card--capsule {
-    padding: 40px 40px;
-}
-
 .plan__card--container {
     display: flex;
     flex-direction: column;
@@ -180,12 +194,12 @@ header::after {
 }
 
 .plan__card--listItem {
-    /* width: fit-content; */
     list-style: none;
     text-align: start;
     font-size: 1rem;
-    margin: 0 0 1rem 0;
     padding: 1rem 0 0 1rem;
+    /* width: fit-content; */
+    /* margin: 0 0 1rem 0; */
 }
 
 .plan__card--listItem::marker {
@@ -194,9 +208,11 @@ header::after {
     font-size: 2rem;
 }
 
-.plan__card a {
+.plan__card .btn_plano {
     align-self: center;
     font-size: 14px;
+    width: 290px;
+    font-size: 10pt;
 }
 
 
@@ -205,26 +221,40 @@ header::after {
 
 /* SECTION [ CHOISE NEW UNIVERSE ] */
 #choiseNewUniverse {
-    height: 1000px;
+    scroll-margin-top: 120px;
+}
+
+.contents {
+    margin: 100px auto;
+}
+
+.container {
+    max-width: 1200px;
+    padding: 1.5rem;
+    text-align: center;
 }
 
 .choise__card--container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto;
-    justify-items: center;
-    gap: 1rem;
-    padding: 3rem 1.5rem 1.5rem;
+    grid-template-columns: repeat(6, 100%);
+    grid-auto-flow: column;
+    overflow: auto hidden;
 }
 
 .content__card {
-    height: auto;
-    max-width: 100%;
+    border-radius: 1rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: 2px solid transparent;
+    transition: transform 0.8s, background 0.8s, border 1s;
 }
 
 .choise__card--img {
-    max-height: 90%;
-    max-width: 100%;
+    width: 90%;
+    object-fit: cover;
+    object-position: center;
+    transition: opacity 2s;
 }
 
 
@@ -243,7 +273,7 @@ footer {
 
 .footer__menu {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     gap: 1.5rem;
     flex-wrap: wrap;
     justify-content: center;
@@ -264,11 +294,11 @@ footer {
 
 .footer_container p {
     font-size: .75rem;
-    margin: 16px;
+    margin: 25px 16px 16px;
     color: var(--link-color);
 }
 
-.social_media--container{
+.social_media--container {
     display: flex;
     flex-direction: row;
     justify-content: center;
