@@ -21,7 +21,20 @@
   unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 
+/* Custom Scroll */
 
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--tertiary-color);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--secondary-color);
+}
 
 
 
@@ -33,6 +46,10 @@
   text-align: center;
   text-decoration: none;
   box-sizing: border-box;
+}
+
+section {
+  scroll-margin-top: 140px;
 }
 
 :root {
@@ -74,8 +91,7 @@
 button,
 .header__content a,
 .plan__card a {
-  width: 75%;
-  /* display: inline-block; */
+  width: 250px;
   padding: 16px 40px;
   background-color: var(--tertiary-color);
   border-radius: 500px;
@@ -191,14 +207,14 @@ button,
 
 @keyframes gradient {
   0% {
-      background-position: 0 50%;
+    background-position: 0 50%;
   }
 
   50% {
-      background-position: 100% 50%;
+    background-position: 100% 50%;
   }
 
   100% {
-      background-position: 0 50%;
+    background-position: 0 50%;
   }
 }
