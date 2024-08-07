@@ -3,12 +3,14 @@
 @media screen and (min-width:481px) {
     .nav-menu {
         flex-direction: row;
+        justify-content: space-between;
         height: 55px;
     }
 
     .nav-menu img,
     .header-btn {
         margin: 0 0 5px;
+        /* padding: 1.5rem; */
     }
 
     .nav-menu img {
@@ -38,6 +40,12 @@
 
     .plan__card--listItem {
         font-size: 1.25rem;
+    }
+
+    .plan__card .btn_plano {
+        font-size: 14px;
+        width: 90%;
+        font-size: .8360rem; /* 8pt */
     }
 
     .choise__card--container {
