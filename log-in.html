@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="assets/css/global.css">
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/media-min-480px.css">
+    <link rel="stylesheet" href="assets/css/media-min-800px.css">
     <title>Academic HBO Max</title>
 
     <style>
@@ -30,17 +31,24 @@
 
 
     <main id="login">
-        <div class="login__container">
-            <p class="login__title">Entrar</p>
+        <form class="login__container">
+            <h1 class="login__title">Entrar</h1>
             <p class="login__label">Você tem uma conta da HBO Max?
             </p>
-            <input type="email">
-            <input type="password">
+            <div class="login__container--inputs">
+                <label for="email">E-mail:</label>
+                <input class="login__email" type="email" for="email" name="email" id="email" placeholder="Endereço de e-mail">
+                
+                <label for="password">Senha:</label>
+                <input type="password" for="password" name="password" id="password" placeholder="Senha" required pattern="(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}">
+                <p class="login__hiddemMessage">A senha deve ter pelo menos 8 caracteres, incluindo letras maiúsculas, números e caracteres especiais.</p>
+            </div>
+
             <div class="login__btn-enter">
                 <button class="button btn-subscriber-animated w-150 btn_plano" type="button">Entrar</button>
                 <a class="login__link" href="#">Esqueceu a senha?</a>
             </div>
-        </div>
+        </form>
     </main>
 
 
