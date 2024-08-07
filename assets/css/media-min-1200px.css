@@ -1,0 +1,62 @@
+@import url('global.css');
+
+@media screen and (min-width:481px) and (max-width:800px) {
+    .nav-menu {
+        flex-direction: row;
+        justify-content: space-between;
+        height: 55px;
+    }
+
+    .nav-menu img,
+    .header-btn {
+        margin: 0 0 5px;
+        /* padding: 1.5rem; */
+    }
+
+    .nav-menu img {
+        width: 195px;
+    }
+
+    header {
+        margin: 50px 0 0;
+    }
+
+
+    /* SECTION PLANS */
+    .plan__card {
+        padding: 40px 60px;
+    }
+
+    .Plan__card--content--title {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .plan__card--price .plan__card--value {
+        font-size: 2rem;
+    }
+
+    .plan__card--listItem {
+        font-size: 1.25rem;
+    }
+
+    .plan__card .btn_plano {
+        font-size: 14px;
+        width: 90%;
+        font-size: .8360rem; /* 8pt */
+    }
+
+    .choise__card--container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 1rem;
+    }
+
+
+    /* FOOTER */
+    .footer__menu {
+        flex-direction: row;
+    }
+}
