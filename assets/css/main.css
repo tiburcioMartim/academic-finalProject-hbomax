@@ -192,8 +192,6 @@ header::after {
     text-align: start;
     font-size: 1rem;
     padding: 1rem 0 0 1rem;
-    /* width: fit-content; */
-    /* margin: 0 0 1rem 0; */
 }
 
 .plan__card--listItem::marker {

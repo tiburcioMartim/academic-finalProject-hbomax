@@ -28,14 +28,15 @@
     }
 
     .plan__card--price .plan__card--value {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
-    .plan__card--capsule {
-        padding: 40px 60px;
+    .Plan__card--content--title{
+        display: flex;
+        flex-direction: column;
     }
 
     .plan__card--listItem {
-        font-size: 1.25rem;
+        font-size: 1rem;
     }
 }
