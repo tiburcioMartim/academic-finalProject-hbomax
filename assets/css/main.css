@@ -430,7 +430,7 @@ header::after {
 
 /* LOGIN.HTML PAGE */
 .bg-series {
-    background-image: url("/assets/img/background-movies-series.png");
+    background-image: url("../img/background-movies-series.png");
     height: 100vh;
     background-size: cover;
 }
