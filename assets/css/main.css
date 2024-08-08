@@ -129,6 +129,20 @@ header::after {
     text-align: center;
 }
 
+#plans h1 {
+    width: 100%;
+}
+
+.plans__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+    padding: 1.5rem;
+    perspective: 2000px;
+    perspective-origin: top;
+}
+
 .plan__card {
     display: flex;
     flex-direction: column;
@@ -147,32 +161,16 @@ header::after {
     flex-direction: column;
 }
 
-.card1 {
-    animation: cardRotateOne 2s linear 1;
-}
-
-.plan__card--price .plan__card--value {
-    font-size: 1.5rem;
-}
-
-.plans__container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 5rem;
-    padding: 1.5rem;
-}
-
-.plans__container h1 {
-    width: 100%;
-}
-
 .plan__card--container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
     margin: 0 0 2rem 0;
+}
+
+.plan__card--price .plan__card--value {
+    font-size: 1.5rem;
 }
 
 .plan__card--price {
@@ -207,7 +205,19 @@ header::after {
     font-size: .8360rem;
 }
 
+.plans__container:has(.card__rotate:nth-child(1):hover) .card__rotate:nth-child(2) {
+    transform: rotateY(-45deg);
+    transition: 1s;
+}
 
+.plans__container:has(.card__rotate:nth-child(2):hover) .card__rotate:nth-child(1) {
+    transform: rotateY(45deg);
+    transition: 1s;
+}
+
+.card__rotate {
+    transition: 1s;
+}
 
 
 
@@ -237,6 +247,50 @@ header::after {
     background-position: center;
     border: 2px solid transparent;
     transition: transform 0.8s, background 0.8s, border 1s;
+}
+
+.content__card:nth-child(1):hover {
+    background-image: url("../img/1-hbo-hover_0.webp");
+}
+
+.content__card:nth-child(2):hover {
+    background-image: url("../img/2-MAX-Hover.webp");
+}
+
+.content__card:nth-child(3):hover {
+    background-image: url("../img/3-DC-Hover.webp");
+}
+
+.content__card:nth-child(4):hover {
+    background-image: url("../img/4-WB-Hover.webp");
+}
+
+.content__card:nth-child(5):hover {
+    background-image: url("../img/5-CN-Hover.png");
+}
+
+.content__card:nth-child(6):hover {
+    background-image: url("../img/6-UCL-Hover.webp");
+}
+
+.content__card:nth-child(1):hover,
+.content__card:nth-child(2):hover,
+.content__card:nth-child(3):hover,
+.content__card:nth-child(4):hover,
+.content__card:nth-child(5):hover,
+.content__card:nth-child(6):hover {
+    transition: .8s ease;
+    transform: scale(1.01);
+}
+
+.choise__card--img:nth-child(1):hover,
+.choise__card--img:nth-child(2):hover,
+.choise__card--img:nth-child(3):hover,
+.choise__card--img:nth-child(4):hover,
+.choise__card--img:nth-child(5):hover,
+.choise__card--img:nth-child(6):hover {
+    opacity: 0;
+    transition: .8s ease;
 }
 
 .choise__card--img {
@@ -378,5 +432,5 @@ header::after {
 .bg-series {
     background-image: url("/assets/img/background-movies-series.png");
     height: 100vh;
-    background-size: cover;    
+    background-size: cover;
 }
